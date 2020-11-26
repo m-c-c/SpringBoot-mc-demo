@@ -1,0 +1,10 @@
+server:
+  port: 8090
+
+spring:
+  mvc:
+    view:
+      #文件位置
+      prefix: /templates/
+      #文件后缀
+      suffix: .ftl
