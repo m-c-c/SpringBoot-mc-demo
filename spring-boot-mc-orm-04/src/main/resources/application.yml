@@ -1,0 +1,20 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=CST&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  jpa:
+    #\u81EA\u52A8\u521B\u5EFA|\u66F4\u65B0|\u9A8C\u8BC1\u6570\u636E\u5E93\u8868\u7ED3\u6784
+    hibernate:
+      ddl-auto: update
+    #\u8BBE\u7F6E\u6570\u636E\u5E93\u5F15\u64CE\u4E3AInnoDB
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    #\u6253\u5370sql\u8BED\u53E5\uFF0C\u65B9\u4FBF\u8C03\u8BD5
+    show-sql: true
+
