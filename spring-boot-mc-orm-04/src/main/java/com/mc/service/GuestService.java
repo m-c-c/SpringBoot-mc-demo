@@ -1,7 +1,7 @@
 package com.mc.service;
 
 
-import com.mc.bean.Guest;
+import com.mc.domain.Guest;
 
 import java.util.List;
 

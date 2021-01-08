@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    #多数据源
+    db1:
+      jdbc-url: jdbc:mysql://localhost:3306/test?serverTimezone=CST&characterEncoding=UTF-8
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    db2:
+      jdbc-url: jdbc:mysql://localhost:3306/bak_schema?serverTimezone=CST&characterEncoding=UTF-8
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+#mybatis:
+#  config-location: classpath:mybatis-config.xml
+
+#  mapper-locations: classpath*:/mybatis/mapper/*.xml
+#  type-aliases-package: com.mc.domain

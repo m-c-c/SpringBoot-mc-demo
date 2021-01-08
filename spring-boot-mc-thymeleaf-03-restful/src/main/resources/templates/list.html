@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+    <script type="text/javascript" th:src="@{/webjars/jquery/3.5.1/jquery.js}"></script>
+</head>
+<body class="container" style="margin-top: 50px">
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>名字</th>
+            <th>角色</th>
+            <th>编辑</th>
+            <th>删除</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr th:each="guest:${guestList}">
+            <td th:text="${guest.name}">name</td>
+            <td th:text="${guest.role}">role</td>
+            <td class="col-sm-1"><a th:href="@{/guest/toUpdate/}+${guest.name}" class="btn btn-info">update</a></td>
+            <td class="col-sm-1">
+<!--                <a href="/guest/toDel" th:href="@{/guest/toDel(name=${guest.name})}" class="btn btn-info">del</a>-->
+<!--                <botton th:attr="del_url=@{/guest/}+${guest.name}" name="del_button">del</botton>-->
+                <button th:attr="del_url=@{/guest/}+${guest.name}" name="del_button">del</button>
+            </td>
+        </tr>
+<!--  类似于 foreach-->
+    </tbody>
+</table>
+<div class="form-group">
+    <div class="col-sm-2 control-label">
+        <a href="/guest/toAdd" th:href="@{/guest/toAdd}" class="btn btn-info">add</a>
+    </div>
+</div>
+
+
+
+
+<form method="post" id="del_form">
+    <input type="hidden" name="_method" value="delete">
+</form>
+
+<script>
+    $(function () {
+        $("button[name='del_button']").click(function () {
+            $("#del_form").prop("action",$(this).attr("del_url")).submit();
+        });
+    });
+</script>
+
+<!--<form method="post" id="delForm">-->
+<!--    <input type="hidden" name="_method" value="delete">-->
+<!--</form>-->
+<!--<script>-->
+<!--    $(function () {-->
+<!--        $("button[name='del_button']").click(function () {-->
+<!--            $('#delForm').prop("action",$(this).attr("del_url")).submit-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+
+
+
+
+</body>
+</html>

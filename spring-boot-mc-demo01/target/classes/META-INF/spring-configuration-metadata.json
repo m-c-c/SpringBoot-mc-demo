@@ -1,0 +1,67 @@
+{
+  "groups": [
+    {
+      "name": "food",
+      "type": "mc.config.FoodConfig",
+      "sourceType": "mc.config.FoodConfig"
+    },
+    {
+      "name": "spicychicken",
+      "type": "mc.config.SpicyChickenConfig",
+      "sourceType": "mc.config.SpicyChickenConfig"
+    },
+    {
+      "name": "vegetables",
+      "type": "mc.config.VegetablesConfig",
+      "sourceType": "mc.config.VegetablesConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "food.meat",
+      "type": "java.lang.String",
+      "sourceType": "mc.config.FoodConfig"
+    },
+    {
+      "name": "food.rice",
+      "type": "java.lang.String",
+      "sourceType": "mc.config.FoodConfig"
+    },
+    {
+      "name": "food.sauce",
+      "type": "java.lang.String[]",
+      "sourceType": "mc.config.FoodConfig"
+    },
+    {
+      "name": "spicychicken.beer",
+      "type": "java.lang.String",
+      "sourceType": "mc.config.SpicyChickenConfig"
+    },
+    {
+      "name": "spicychicken.chicken",
+      "type": "java.lang.String",
+      "sourceType": "mc.config.SpicyChickenConfig"
+    },
+    {
+      "name": "spicychicken.pepper",
+      "type": "java.lang.String",
+      "sourceType": "mc.config.SpicyChickenConfig"
+    },
+    {
+      "name": "vegetables.eggplant",
+      "type": "java.lang.String",
+      "sourceType": "mc.config.VegetablesConfig"
+    },
+    {
+      "name": "vegetables.greenpeper",
+      "type": "java.lang.String",
+      "sourceType": "mc.config.VegetablesConfig"
+    },
+    {
+      "name": "vegetables.potato",
+      "type": "java.lang.String",
+      "sourceType": "mc.config.VegetablesConfig"
+    }
+  ],
+  "hints": []
+}

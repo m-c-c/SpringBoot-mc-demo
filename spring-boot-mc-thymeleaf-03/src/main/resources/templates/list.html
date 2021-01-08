@@ -21,8 +21,8 @@
         <tr th:each="guest:${guestList}">
             <td th:text="${guest.name}">name</td>
             <td th:text="${guest.role}">role</td>
-            <td><a href="/guest/toUpdate" th:href="@{/guest/toUpdate(name=${guest.name})}" class="btn btn-info">update</a></td>
-            <td><a href="/guest/toDel" th:href="@{/guest/toDel(name=${guest.name})}" class="btn btn-info">del</a></td>
+            <td class="col-sm-1"><a href="/guest/toUpdate" th:href="@{/guest/toUpdate(name=${guest.name})}" class="btn btn-info">update</a></td>
+            <td class="col-sm-1"><a href="/guest/toDel" th:href="@{/guest/toDel(name=${guest.name})}" class="btn btn-info">del</a></td>
         </tr>
 <!--  类似于 foreach-->
     </tbody>
@@ -31,7 +31,6 @@
     <div class="col-sm-2 control-label">
         <a href="/guest/toAdd" th:href="@{/guest/toAdd}" class="btn btn-info">add</a>
     </div>
-
 </div>
 
 

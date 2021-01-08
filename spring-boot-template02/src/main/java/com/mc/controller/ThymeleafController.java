@@ -1,6 +1,6 @@
 package com.mc.controller;
 
-import com.mc.bean.Restaurant;
+import com.mc.domain.Restaurant;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

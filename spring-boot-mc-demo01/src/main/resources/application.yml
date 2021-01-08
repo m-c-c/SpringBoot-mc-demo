@@ -1,0 +1,40 @@
+#server:
+#  port: 8090
+
+food:
+  rice: 米饭
+  meat: 烤肉
+  sauce:
+    - 辣椒
+    - 原味
+    - 孜然
+
+spicychicken:
+  pepper: 朝天椒
+  chicken: 乌鸡
+  beer: 青岛啤酒
+
+vegetables:
+  potato: 土豆
+  eggplant: 茄子
+  greenpeper: 青椒
+
+
+#flow流式语法
+#food: {meat: 烤肉,rice: 拌饭}
+
+spring:
+  profiles:
+    active: prod
+---
+spring:
+  profiles: dev
+server:
+  port: 8090
+
+
+---
+spring:
+  profiles: prod
+server:
+  port: 8091

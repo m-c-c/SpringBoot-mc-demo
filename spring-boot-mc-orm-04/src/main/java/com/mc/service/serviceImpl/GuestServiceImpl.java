@@ -2,7 +2,7 @@ package com.mc.service.serviceImpl;
 
 
 
-import com.mc.bean.Guest;
+import com.mc.domain.Guest;
 import com.mc.repository.GuestRepository;
 import com.mc.service.GuestService;
 import org.springframework.beans.factory.annotation.Autowired;

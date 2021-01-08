@@ -1,6 +1,6 @@
 package com.mc.controller;
 
-import com.mc.bean.Guest;
+import com.mc.domain.Guest;
 import com.mc.service.GuestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
